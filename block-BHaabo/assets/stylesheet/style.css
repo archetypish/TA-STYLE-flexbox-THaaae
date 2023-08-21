@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom CSS-------------------------------- */
+
+/* Global options------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: #222946;
+}
+
+.icon {
+  width: 24px;
+}
+
+/* Typography --------------------------- */
+/* Header */
+.header {
+  background-color: #222946;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.link-text {
+  font-size: 16px;
+  color: #fff;
+}
+/* Post */
+.post {
+}
+
+.post-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.post-text {
+  font-size: 14px;
+}
+
+.post-link {
+  color: #fff;
+  display: inline-block;
+  background-color: #37b667;
+  padding: 12px 36px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 0 12px 0px rgba(55, 182, 103, 0.5);
+}
+
+.post-img {
+  max-width: 100%;
+}
+
+/* Navigation */
+.nav {
+  background-color: #a3caea;
+}
+
+.nav-icon {
+  width: 16px;
+  color: #222946;
+}
+
+.nav-link-text {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.active {
+  color: #ff7b29;
+  border: 2px solid #ff7b29;
+  border-radius: 8px;
+}
+
+.active .link {
+  color: #ff7b29;
+}
+
+/* Footer */
+.footer {
+  background-color: #222946;
+  color: #bcc0d2;
+}
+
+.footer small {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-icon {
+  color: #bcc0d2;
+  font-size: 20px;
+}
+
+/* Layout------------------------------- */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-notification {
+  margin-right: 36px;
+  margin-left: auto;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* main */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.main {
+  order: 1;
+  flex: 0 1 70%;
+  background-color: #f2f8fd;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.nav {
+  flex: 0 1 30%;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: stretch;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+
+.post-img {
+  order: -1;
+}
+
+.nav-items {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  /* border: 2px solid black; */
+}
+
+.nav-item {
+  padding: 12px 30px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.logout {
+  background-color: #f2f8fd;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+/* footer */
+
+.footer {
+  padding: 36px;
+}
+
+.socials-icon {
+  margin-left: 16px;
+}
